@@ -1,1 +1,47 @@
 # structure
+
+```
+myProject/
+    .git/
+    dist/ (folder generated via tasks and ultimately gets deployed)
+        css/
+            main.css * combined and compiled via sass
+        img/
+            cat.jpg * compiled via imagemin or copied via gulp task
+        js/
+            aug.js * compiled via babel or copied via gulp task
+            main.js * compiled via babel or copied via gulp task
+        vendor/ * third party modules (bower_components) go here
+            angular/
+            font-awesome/
+            jquery/
+            lodash/
+            ...
+        index.html * compiled via jade or copied via gulp task
+    node_modules/
+        gulp/
+        jshint/
+        ...
+    src/ (folder where 99% of your work resides)
+        css/
+            components/
+                _footer.scss
+                _header.scss
+            main.scss
+        img/
+            cat.jpg
+        js/
+            aug.js
+            main.js
+        index.jade
+    .bowerrc
+    .editorconfig
+    .gitignore * ignoring node_modules, bower_components, & dist folders
+    .jshintrc
+    .sass-lint.yml
+    bower.json
+    gulpfile.js
+    LICENSE
+    package.json
+    README.md
+```
